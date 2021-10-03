@@ -8,6 +8,6 @@ package com.example.fanproj;
  *
  */
 interface Toggle {
-	void pull(MyFanPullCord2 cord2);
+	String pull(MyFanPullCord2 cord2);
 	
 }

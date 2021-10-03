@@ -8,6 +8,6 @@ package com.example.fanproj;
  *
  */
 interface Speed {
-	void pull(MyFanPullCord1 cord1);
+	String pull(MyFanPullCord1 cord1);
 
 }

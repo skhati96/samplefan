@@ -1,16 +1,21 @@
 package com.example.fanproj;
 
-class MyFanPullCord2 implements MyFanPullCord {
-	private Toggle currentDirection;
+public class MyFanPullCord2 implements MyFanPullCord {
+	private String currentDirection;
+	private Toggle changeDirection;
 	
 	public MyFanPullCord2() {
-		currentDirection = new Clockwise();
+		currentDirection = new String();
+		changeDirection = new ChangeDirection();
 	}
-	public void setDirection(Toggle t) {
-		currentDirection =t;
+	public void setDirection(String sd) {
+		currentDirection = sd;
 	}
-	public void pull() {
-		currentDirection.pull(this);
+	public String getCurrentDirection() {
+		return currentDirection;
+	}
+	public String pull(String d) {
+		return changeDirection.pull(this);
 	}
 
 }

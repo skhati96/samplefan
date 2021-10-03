@@ -1,5 +1,5 @@
 package com.example.fanproj;
 
 interface MyFanPullCord {	
-	void pull();
+	String pull(String s);
 }
